@@ -9,11 +9,11 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 /* Style the top header */
 
@@ -166,10 +166,15 @@ footer img {
   margin-left: 10%;
 }
 
+/* Add media queries for responsiveness - when the screen is 600px wide or less, stack the links on top of each other */
 
+@media screen and (max-width: 750px) {
+.content{
+  margin: 10px;
+}
+}
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
   .content{
     margin: 0;

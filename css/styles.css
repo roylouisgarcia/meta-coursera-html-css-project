@@ -159,9 +159,11 @@ main>h2 {
   .focus{
     width: 300px;
     transition: width .6s;
+    box-shadow: 10px 10px 30px black;
   }
   .focus:hover{
     width: 500px;
+    box-shadow: 10px 10px 100px black;
   }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -248,10 +250,13 @@ main>h2 {
   }
   .focus{
     width: 300px;
+    box-shadow: 10px 10px 30px black;
+    margin:5px;
     transition: width .6s;
   }
   .focus:hover{
     width: 350px;
+    box-shadow: 10px 10px 100px black;
   }
   
   /* Style for the footer */

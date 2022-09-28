@@ -64,7 +64,7 @@
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
+  background-color: #d4af37;
   color: black;
 }
 
@@ -77,6 +77,51 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+}
+
+/* Style for About Mangato */
+#about-mangato{
+    background-color: rgb(3, 43, 82);
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: smaller;
+}
+
+section{
+  /* background-color: #d4af37; */
+display: grid;
+gap: 10px;
+  grid-template-columns: auto auto auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
+
+.article1{
+background-image: url("../images/mangata-article1.jpg");
+background-position: center;
+background-size: contain;
+background-color: white;
+align-items: center;
+height: 90px;
+text-align: center;
+color: white;
+background-repeat: no-repeat;
+  
+}
+
+.article2{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #0e0222;
+}
+.items-for-sale{
+  max-width: 200px;
+    box-shadow: 10px 10px 30px white;
 }
 
 
@@ -98,53 +143,7 @@ footer img {
 }
 
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
-  .header .logo{
-    text-align: center;
-    width: 170px;
-    margin-left: 33%;
-  }
-
-  .header a.active {
-    background-color: rgb(3, 43, 82);
-    color: white;
-  }
-  .header-right {
-    float: none;
-  }
-  #left-nav {
-    display: none;
-  }
-  .footer-right{
-    text-align: center;
-  }
-
-
-  footer img {
-    padding: 5px;
-    width: 60px;
-    float: left;
-  }
-
-  footer {
-    font-size: 11px;
-    text-align: end;
-    padding-right: 10px;
-  }
-
-}
-
-
-
-
-/* Style the footer with a grey background and some padding */
+/* Style for the footer */
 .footer {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -184,11 +183,96 @@ padding: 0px;
 
 /* Change the link color on hover */
 #left-nav li a:hover {
-  background-color: #ddd;
+  background-color: #d4af37;
   color: black;
 }
 
 #left-nav li a.active{
   background-color: rgb(3, 43, 82);
   color: white;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .header .logo{
+    text-align: center;
+    width: 170px;
+    margin-left: 33%;
+  }
+
+  .header a.active {
+    background-color: rgb(3, 43, 82);
+    color: white;
+  }
+  .header-right {
+    float: none;
+  }
+  #left-nav {
+    display: none;
+  }
+  .footer-right{
+    text-align: center;
+  }
+
+  h1{
+    font-size: small;
+  }
+
+  body{
+    font-size: smaller;
+  }
+
+section{
+  /* background-color: #d4af37; */
+display: grid;
+gap: 10px;
+  grid-template-columns: auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
+
+.article1{
+background-image: url("../images/mangata-article1.jpg");
+background-position: center;
+background-size: contain;
+background-color: white;
+align-items: center;
+height: 40px;
+text-align: center;
+color: white;
+background-repeat: no-repeat;
+  
+}
+
+.article2{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #0e0222;
+}
+.items-for-sale{
+  max-width: 140px;
+    box-shadow: 10px 10px 30px white;
+}
+
+  footer img {
+    padding: 5px;
+    width: 60px;
+    float: left;
+  }
+
+  footer {
+    font-size: 11px;
+    text-align: end;
+    padding-right: 10px;
+  }
+
 }

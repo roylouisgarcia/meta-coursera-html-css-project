@@ -1,7 +1,72 @@
+/* Style overall */
+
+body {
+  background-image: url("../images/little_lemon_brick_bg.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+/* Style the top header */
+
+.top-header {
+  margin: 0px;
+  padding: 0px;
+  height: fit-content;
+}
+
+.top-header ul {
+  margin: 0 0 40px 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  list-style: none;
+  text-align: center;
+}
+
+.top-header li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+.top-header li a:hover {
+  background-color: rgb(65, 147, 230);
+  color: black;
+}
+
+.top-header li a.active {
+  background-color: rgb(0, 5, 10);
+  color: white;
+}
+
+.top-header li {
+  display: inline-block;
+}
+
+
+/* Style the content brick background */
+.content {
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f0f2e3;
   padding: 20px 10px;
 }
 
@@ -17,21 +82,24 @@
   border-radius: 4px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header .logo {
-  width: 40px;
+#logo_no_text {
+  display: none;
+}
+
+#logo_with_text {
+  width: 300px;
   margin: 0 0 0 1%;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
+  background-color: #f4ce15;
   color: black;
 }
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: rgb(25, 48, 70);
+  background-color: #49625f;
   color: white;
 }
 
@@ -40,73 +108,22 @@
   float: right;
 }
 
-
-
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
-  .header .logo{
-    text-align: center;
-    width: 60px;
-    margin-left: 40%;
-  }
-
-  .header a.active {
-    background-color: rgb(3, 43, 82);
-    color: white;
-  }
-  .header-right {
-    float: none;
-  }
-  #left-nav {
-    display: none;
-  }
-  .footer-right{
-    text-align: center;
-  }
-  main{
-    
-  }
-
-}
-
-
-
-
-/* Style the footer with a grey background and some padding */
-.footer {
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-.footer h3 {
-	margin-left: 16px;
-}
-
-.footer-right{
-	float: right;
-	text-justify: auto;
-	text-align: end;
+#mid-content {
+  display: flex;
 }
 
 
 #left-nav {
-	margin: 0px;
-padding: 0px;	
-	height:fit-content;
+  margin: 0px;
+  padding: 0px;
+  height: fit-content;
 }
 
 #left-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 170px;
   background-color: #f1f1f1;
 }
 
@@ -117,13 +134,101 @@ padding: 0px;
   text-decoration: none;
 }
 
-/* Change the link color on hover */
 #left-nav li a:hover {
-  background-color: #ddd;
+  background-color: #f4ce15;
   color: black;
 }
 
-#left-nav li a.active{
-  background-color: rgb(3, 43, 82);
+#left-nav li a.active {
+  background-color: #49625f;
   color: white;
+}
+
+
+main {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/* Style for the footer */
+footer {
+  display: flex;
+  background-color: #f0f2e3;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer img {
+  width: 100px;
+  margin-left: 10%;
+}
+
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+
+  .content{
+    margin: 0;
+  }
+
+#logo_with_text {
+  display: none;
+}
+.header{
+  text-align: center;
+}
+#logo_no_text {
+  display: grid;
+  padding-left: 40%;
+  width: 50px;
+  margin: 0 0 0 1%;
+}
+
+h1 {
+  font-size: 20px;
+}
+  .header a {
+  font-size: .9rem;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .header .logo {
+    text-align: center;
+    width: 60px;
+    margin-left: 40%;
+  }
+
+  .header a.active {
+    background-color: #49625f;
+    color: white;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  #left-nav {
+    display: none;
+  }
+main {
+  font-size: 11px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+footer img{
+  padding: 10px;
+  width: 60px;
+}
+footer{
+  font-size: 11px;
+  padding-top:5px;
+}
+
 }

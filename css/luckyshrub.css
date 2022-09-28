@@ -171,6 +171,9 @@ footer img {
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
+  body {
+    padding: 0;
+  }
   /* Style overall */
 
   main h1 {
@@ -192,7 +195,7 @@ footer img {
   .header .logo {
     text-align: center;
     width: 40px;
-    margin-left: 40%;
+    margin-left: 46%;
   }
 
   .header a.active {

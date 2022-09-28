@@ -246,6 +246,13 @@ main>h2 {
     padding: 10px;
     max-height: 200px;
   }
+  .focus{
+    width: 300px;
+    transition: width .6s;
+  }
+  .focus:hover{
+    width: 350px;
+  }
   
   /* Style for the footer */
   footer {

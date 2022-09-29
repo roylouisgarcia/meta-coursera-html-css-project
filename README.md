@@ -1,4 +1,4 @@
-# The Course: HTML and CSS in Depth
+# The Course: Coursera/Meta HTML and CSS in Depth
 
 ### This course is 4 of 9 in the Meta Front-End Developer Specialization that is offered by Meta through Coursera.
 

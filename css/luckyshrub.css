@@ -1,8 +1,7 @@
 /* Style overall */
 
 body {
-  background-image: url("../images/lucky_shrubs_bg.jpg");
-  /* background-color: #a8fda7; */
+  /* background-image: url("../images/lucky_shrubs_bg.jpg"); */
   background-color: #b53434;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +46,7 @@ h2 {
 
 
 .top-header li a:hover {
-  background-color: rgb(65, 147, 230);
+    background-color: rgb(252, 161, 57);
   color: black;
 }
 
@@ -106,8 +105,7 @@ h2 {
 
 #mid-content {
   display: flex;
-  color: #f1f1f1;
-  background-color: #b53434;
+  background-color: #ede5e5;
 }
 
 
@@ -165,12 +163,86 @@ footer img {
 }
 
 #right-nav li a.active {
-  background-color: #b53434;
-  color: white;
+  background-color: #ede5e5;
 }
+.for-sale{
+display: grid;
+gap: 10px;
+  grid-template-columns: auto auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
+
+.article1{
+background-image: url("../images/mangata-article1.jpg");
+background-position: center;
+background-size: contain;
+background-color: white;
+align-items: center;
+height: 90px;
+text-align: center;
+color: white;
+background-repeat: no-repeat;
+  
+}
+
+.article2{
+  border: 1px dashed rgba(82, 54, 54, 0.8);
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgb(204, 241, 206);
+}
+.items-for-sale{
+  max-width: 200px;
+  transition: width 2s;
+  box-shadow: 5px 5px 20px rgb(50, 130, 7);
+}
+  .items-for-sale:hover{
+    box-shadow: 10px 10px 100px rgb(127, 96, 127);
+  }
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
+  /* Style the top header */
+  .top-header {
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+  }
+
+  .top-header ul {
+    margin: 0 0 40px 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+  }
+
+  .top-header li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color on hover */
+  .top-header li a:hover {
+    background-color: rgb(252, 161, 57);
+    color: black;
+  }
+
+  .top-header li a.active {
+    background-color: rgb(0, 5, 10);
+    color: white;
+  }
+
+  .top-header li {
+    display: block;
+  }
+
   body {
     padding: 0;
   }
@@ -245,6 +317,14 @@ footer img {
   .small-invi {
     display: none;
   }
+
+.for-sale{
+display: grid;
+gap: 5px;
+  grid-template-columns: auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
 
 }
 

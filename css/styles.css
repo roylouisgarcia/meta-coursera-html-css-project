@@ -9,7 +9,11 @@ body {
   margin-right: 3%;
 
 }
-
+#instructions{
+    background-color: rgb(252, 161, 57);
+    padding: 5px;
+    text-align: center;
+}
 h1 {
   font-size: 3rem;
 }
@@ -51,7 +55,7 @@ h2 {
 /* Change the link color on hover */
 
 .top-header li a:hover {
-  background-color: rgb(65, 147, 230);
+    background-color: rgb(252, 161, 57);
   color: black;
 }
 
@@ -194,7 +198,7 @@ main>h2 {
 
   /* Change the link color on hover */
   .top-header li a:hover {
-    background-color: rgb(65, 147, 230);
+    background-color: rgb(252, 161, 57);
     color: black;
   }
 

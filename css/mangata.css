@@ -93,7 +93,7 @@ h2{
   font-size: smaller;
 }
 
-section{
+#items-for-sale-section{
   /* background-color: #d4af37; */
 display: grid;
 gap: 10px;

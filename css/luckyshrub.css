@@ -1,8 +1,7 @@
 /* Style overall */
 
 body {
-  /* background-image: url("../images/lucky_shrubs_bg.jpg"); */
-  background-color: #b53434;
+  background-image: url("../images/lucky_shrubs_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -271,14 +270,14 @@ background-repeat: no-repeat;
   }
 
   .header a.active {
-    background-color: #b53434;
+    background-color: #da9292;
     color: white;
     text-decoration: none;
   }
   .header a:hover {
     text-decoration: none;
     color: whitesmoke;
-    background-color: #26877f;
+    background-color: #4a5d47;
   }
 
   .header-right {

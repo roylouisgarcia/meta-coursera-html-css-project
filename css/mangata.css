@@ -274,8 +274,7 @@ padding: 0px;
     font-size: smaller;
   }
 
-section{
-  /* background-color: #d4af37; */
+#items-for-sale-section{
 display: grid;
 gap: 10px;
   grid-template-columns: auto;

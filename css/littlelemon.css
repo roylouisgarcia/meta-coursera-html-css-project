@@ -2,8 +2,8 @@
 
 body {
   background-image: url("../images/little_lemon_brick_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 3rem;
 
@@ -59,9 +59,10 @@ h2 {
 /* Style the content brick background */
 .content {
   background-color: #f8f8f8;
+  box-shadow: 35px 35px 20px rgb(65, 34, 13);
   border-radius: 25px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* Style the header with a grey background and some padding */
@@ -152,6 +153,58 @@ main {
   padding-left: 20px;
   padding-right: 10px;
 }
+.for-sale{
+display: grid;
+gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
+
+.banner1{
+background-image: url("../images/little-lemon-italian-scenery2.jpg");
+background-position: center;
+background-size: cover;
+background-color: white;
+align-items: center;
+height: 90px;
+text-align: center;
+color: white;
+background-repeat: no-repeat;
+  
+}
+.banner2{
+background-image: url("../images/little-lemon-italian-scenery1.jpg");
+background-position: center;
+background-size: cover;
+background-color: white;
+align-items: center;
+height: 90px;
+text-align: center;
+color: white;
+background-repeat: no-repeat;
+  
+}
+
+.article2{
+  border: 1px dashed rgba(82, 54, 54, 0.8);
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #49625f;
+}
+.article2:hover{
+  background-color: #f4ce15;
+}
+.items-for-sale{
+  max-width: 200px;
+  min-width: none;
+  transition: width 2s;
+  box-shadow: 5px 5px 20px rgb(6, 6, 4);
+}
+  .items-for-sale:hover{
+    box-shadow: 10px 10px 100px rgb(127, 96, 127);
+  }
 
 /* Style for the footer */
 footer {
@@ -170,10 +223,32 @@ footer img {
 }
 
 /* Add media queries for responsiveness - when the screen is 600px wide or less, stack the links on top of each other */
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1500px) {
+.for-sale{
+display: grid;
+gap: 10px;
+  grid-template-columns: auto auto auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
 .content{
   margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+}
+@media screen and (max-width: 1200px) {
+.for-sale{
+display: grid;
+gap: 10px;
+  grid-template-columns: auto auto;
+  background-color: #d9dacf;
+  padding: 10px;
+}
+.content{
+  margin: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 }
 
@@ -267,6 +342,13 @@ main {
   width: 100%;
   padding-left: 20px;
   padding-right: 10px;
+}
+.for-sale{
+display: grid;
+gap: 10px;
+  grid-template-columns: auto;
+  background-color: #d9dacf;
+  padding: 10px;
 }
 footer img{
   padding: 10px;

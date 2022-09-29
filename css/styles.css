@@ -9,8 +9,16 @@ body {
   margin-right: 3%;
 
 }
+#aboutfoos{
+    background-color: rgb(181, 176, 251);
+    border-radius: 10%;
+    padding: 20px;
+    text-align: center;
+}
 #instructions{
     background-color: rgb(252, 161, 57);
+    border-radius: 10%;
+    padding: 20px;
     padding: 5px;
     text-align: center;
 }
